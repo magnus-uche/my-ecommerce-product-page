@@ -5,7 +5,7 @@ window.onload = () => {
         company: "Sneaker Company",
         name: "Fall Limited Edition Sneakers",
         description: "these low-profile sneakers are your perfect casual wear companion. Featuring a durable rubber outer sole, they'll withstand everything the weather can offer.",
-        price: "250.00",
+        price: "125.00",
         discount: "&#36;250.00",
         percenttage: "50&#37;",
         quantity: 0,
@@ -209,7 +209,8 @@ window.onload = () => {
     cartIcon.onmouseover = () => {
       if (counter > 0) {
         ChartCheckout.classList.remove("empty");
-      } else if (counter == 0) {
+        chartCounter.classList.add("filled");
+    } else if (counter <= 0) {
         emptyText.classList.remove("empty");
         ChartCheckout.classList.add("empty")
       }
@@ -222,8 +223,8 @@ window.onload = () => {
       quantity.innerHTML = 0;
       cartQuantity.innerHTML = 0;
       totalPrice.innerHTML = currency + currentProduct.price * 0;
-      chartCounter.innerHTML = 0;
       ChartCheckout.classList.add("empty");
+      chartCounter.classList.remove("filled");
     }
   
   
