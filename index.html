@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/style.css" />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+    <title>Ecommerce product page </title>
+  </head>
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+  <body>
+    <!-- nav section -->
+    <div class="page-wrapper">
+      <header class="header">
+        <nav class="nav">
+          <div class="left-nav">
+            <img class="hamburger" src="./images/icon-menu.svg" />
+            <div class="logo">sneakers</div>
+            <ul class="nav-list">
+              <li class="nav-item nav-item-1 target">
+                <a href="">collections</a>
+              </li>
+              <li class="nav-item nav-item-2"><a href="">men</a></li>
+              <li class="nav-item nav-item-3"><a href="">women</a></li>
+              <li class="nav-item nav-item-4"><a href="">about</a></li>
+              <li class="nav-item nav-item-5"><a href="">contact</a></li>
+            </ul>
+          </div>
+          <div class="right-nav">
+            <img class="cart-icon" src="./images/icon-cart.svg" />
+            <div class="chart-counter"></div>
+            <img class="avatar" src="./images/image-avatar.png" />
+
+            <!-- /nav -->
+
+            <!-- cart -->
+            <div class="cart">
+              <div class="chart-items empty">
+                <h1>cart</h1>
+                <hr />
+                <div class="cartsection">
+                  <div class="cartCollection">
+                    <img
+                      src="/images/image-product-1-thumbnail.jpg"
+                      alt=""
+                      class="collection-image"
+                    />
+                    <div class="collectionDesc">
+                      <p class="cartDesc">Lorem ipsum dolor sit amet.</p>
+                      <div class="cartprice">
+                        <div class="cart-price"></div>
+                        <div class="cart-quantity"></div>
+                        <div class="totalPrice"></div>
+                      </div>
+                      <!-- <div class="cartPrice">$699</div> -->
+                    </div>
+                    <img src="/images/icon-delete.svg" alt="" class="delete" />
+                  </div>
+                </div>
+                <div class="checkout">checkout</div>
+              </div>
+
+              <div class="empty-text empty">Your cart is empty</div>
+            </div>
+            <!-- /chart -->
+          </div>
+        </nav>
+      </header>
+
+      <!-- main section -->
+      <div class="main-wrapper">
+        <main class="main">
+          <div class="left-main">
+            <img class="product" src="" />
+            <div class="product-thumbnail">
+              <div class="container">
+                <img class="thumbnail" id="product-image" src="" />
+                <div class="thumbnail-cover active u"></div>
+              </div>
+
+              <div class="container">
+                <img class="thumbnail" id="product-image" src="" />
+                <div class="thumbnail-cover u"></div>
+              </div>
+
+              <div class="container">
+                <img class="thumbnail" id="product-image" src="" />
+                <div class="thumbnail-cover u"></div>
+              </div>
+              <div class="container">
+                <img class="thumbnail" id="product-image" src="" />
+                <div class="thumbnail-cover u"></div>
+              </div>
+            </div>
+            <div class="arrow-container">
+              <img class="previous-icon" src="./images/icon-previous.svg" />
+              <img class="next-icon" src="./images/icon-next.svg" />
+            </div>
+          </div>
+
+          <div class="right-main">
+            <h3 id="company"></h3>
+            <h1 id="name"></h1>
+            <p id="description"></p>
+            <div class="price-container">
+              <div class="price">
+                <div id="amount"></div>
+                <div id="percentage"></div>
+              </div>
+              <div id="discount"></div>
+            </div>
+            <div class="cart-control-container">
+              <div class="control">
+                <img class="minus" src="./images/icon-minus.svg" />
+                <div class="value"></div>
+                <img class="plus" src="./images/icon-plus.svg" />
+              </div>
+              <div class="add-to-cart">
+                <img class="icon" src="./images/icon-cart.svg" />
+                <div class="text">Add to cart</div>
+              </div>
+            </div>
+          </div>
+        </main>
+      </div>
+      <!-- /main section -->
+    </div>
+
+    <!-- lightbox -->
+    <div class="shadow empty">
+      <div class="lightbox empty">
+        <div class="minimize"></div>
+        <div class="lighbox-image"></div>
+        <img
+          class="product lightbox-image"
+          src="/images/image-product-1-thumbnail.jpg"
+        />
+        <div class="product-thumbnail box">
+          <div class="container">
+            <img class="thumbnail-lightbox" id="product-image" src="" />
+            <div class="cover active u"></div>
+          </div>
+
+          <div class="container">
+            <img class="thumbnail-lightbox" id="product-image" src="" />
+            <div class="cover u"></div>
+          </div>
+
+          <div class="container">
+            <img class="thumbnail-lightbox" id="product-image" src="" />
+            <div class="cover u"></div>
+          </div>
+
+          <div class="container">
+            <img class="thumbnail-lightbox" id="product-image" src="" />
+            <div class="cover u"></div>
+          </div>
+        </div>
+        <div class="arrow-container-lighbox">
+          <div class="previous-icon lightboxprev"></div>
+          <div class="Next-icon lightboxnext four"></div>
+        </div>
+      </div>
+    </div>
+    <!-- /lightbox -->
+    <div class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+      Coded by <a href="#">Your Name Here</a>.
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
