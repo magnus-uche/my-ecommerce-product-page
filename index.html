@@ -11,21 +11,52 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-    <title>Ecommerce product page </title>
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <title>Ecommerce product page</title>
   </head>
   <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
+    .attribution {
+      font-size: 11px;
+      text-align: center;
+    }
+    .attribution a {
+      color: hsl(228, 45%, 44%);
+    }
   </style>
   <body>
     <!-- nav section -->
     <div class="page-wrapper">
       <header class="header">
+        <img class="hamburger" src="./images/icon-menu.svg" />
         <nav class="nav">
           <div class="left-nav">
-            <img class="hamburger" src="./images/icon-menu.svg" />
-            <div class="logo">sneakers</div>
+            <div class="hamburger-menu">
+              <div class="light-box">
+                <img
+                  src="/images/icon-close copy 2.svg"
+                  alt=""
+                  class="menu-close"
+                />
+                <ol class="menu-list">
+                  <li class="menu-item">
+                    <a href="#" class="collecction">collections</a>
+                  </li>
+                  <li class="menu-item"><a href="#" class="men">men</a></li>
+                  <li class="menu-item"><a href="#" class="women">women</a></li>
+                  <li class="menu-item"><a href="#" class="about">about</a></li>
+                  <li class="menu-item">
+                    <a href="#" class="contact">contact</a>
+                  </li>
+                </ol>
+              </div>
+            </div>
+
+            <div class="logo"><img src="/images/logo.svg" alt="" /></div>
             <ul class="nav-list">
               <li class="nav-item nav-item-1 target">
                 <a href="#">collections</a>
@@ -41,8 +72,6 @@
             <div class="chart-counter"></div>
             <img class="avatar" src="./images/image-avatar.png" />
 
-          
-      
             <!-- cart -->
             <div class="cart">
               <div class="chart-items empty">
@@ -76,9 +105,9 @@
           </div>
         </nav>
         <!-- /nav -->
+        
+      
       </header>
-      <!-- <hr> -->
-
 
       <!-- main section -->
       <div class="main-wrapper">
@@ -106,8 +135,8 @@
               </div>
             </div>
             <div class="arrow-container">
-              <img class="previous-icon" src="./images/icon-previous.svg" />
-              <img class="next-icon" src="./images/icon-next.svg" />
+              <img class="previous-icon" src="" />
+              <img class="next-icon" src="" />
             </div>
           </div>
 
@@ -115,13 +144,15 @@
             <h3 id="company"></h3>
             <h1 id="name"></h1>
             <p id="description"></p>
-            <div class="price-container">
-              <div class="price">
+
+            <div id="price-container">
+              <div class="price-section">
                 <div id="amount"></div>
                 <div id="percentage"></div>
               </div>
               <div id="discount"></div>
             </div>
+
             <div class="cart-control-container">
               <div class="control">
                 <img class="minus" src="./images/icon-minus.svg" />
@@ -143,7 +174,7 @@
     <div class="shadow empty">
       <div class="lightbox empty">
         <div class="minimize"></div>
-        <div class="lighbox-image"></div>
+        <!-- <div class="lighbox-imagee"></div> -->
         <img
           class="product lightbox-image"
           src="/images/image-product-1-thumbnail.jpg"
@@ -177,8 +208,10 @@
     </div>
     <!-- /lightbox -->
     <div class="attribution">
-      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-      Coded by <a href="#">Your Name Here</a>.
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="#">Your Name Here</a>.
     </div>
     <script src="script.js"></script>
   </body>
