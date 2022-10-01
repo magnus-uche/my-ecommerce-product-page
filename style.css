@@ -946,8 +946,19 @@ ul li a:hover::after {
 }
 
 @media screen and (max-width: 400px) {
+  .chart-counter {
+    top:0.1em;
+    right: 4.5em;
+  }
   .avatar {
     height: 2.1em;
+  }
+
+  .cart {
+    width: 21em;
+    top: 4em;
+    z-index: 1;
+    left: -15.8em;
   }
 
   .previous-icon,
@@ -957,6 +968,7 @@ ul li a:hover::after {
 }
 
 @media screen and (max-width: 375px) {
+
   .arrow-container {
     gap: 5em;
   }
