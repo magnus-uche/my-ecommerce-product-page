@@ -86,7 +86,7 @@ window.onload = () => {
   company.innerHTML = currentProduct.company;
   name.innerHTML = currentProduct.name;
   description.innerHTML = currentProduct.description;
-  amount.innerHTML = currentProduct.price;
+  amount.innerHTML = `${currency + currentProduct.price}`
   discount.innerHTML = currentProduct.discount;
   percentage.innerHTML = currentProduct.percenttage;
   product.src = currentProduct.preview[0].image;
